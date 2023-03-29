@@ -29,3 +29,10 @@ $ `poetry install` // 의존성 설치
 $ `uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload`
 
 $ deactivate // 가상환경 종료
+
+
+* 도커 컨테이너
+
+> 
+$ docker compose up --build // 도커 컨테이너 실행
+
