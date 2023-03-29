@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fast-test"
+version = "0.1.0"
+description = ""
+authors = ["ehgks0000 <ehgks0083@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fast_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.95.0"
+httpx = "^0.23.3"
+uvicorn = "^0.21.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+start = "uvicorn app.main:app --reload"
